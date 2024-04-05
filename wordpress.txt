@@ -1,0 +1,4 @@
+Install Wordpress:
+
+wget https://wordpress.org/latest.tar.gz
+
