@@ -1,0 +1,21 @@
+sudo apt-get install xrdp
+sudo adduser xrdp ssl-cert
+sudo ufw allow 3389/tcp
+
+sudo chmod 600 /etc/xrdp/example.key
+sudo chmod 600 /etc/xrdp/example.crt
+
+vim /etc/xrdp/xrdp.ini  
+
+[Globals]
+
+tls_ciphers=HIGH # set to high
+ssl_protocols=TLSv1.2,TLSv1.3
+key_file=/etc/xrdp/example.key # add your SSL key path
+certificate=/etc/xrdp/example.crt # add your SSL crt path
+crypt_level=high # set to High
+security_layer=rdp,tls # You can use tls,rdp or tls
+
+sudo systemctl enable xrdp
+sudo systemctl restart xrdp 
+sudo systemctl status xrdp
