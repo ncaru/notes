@@ -1,3 +1,5 @@
+Taken from: https://gitlab.com/-/snippets/2515869
+
 # Disable Sleep, Hibernate, Suspend on Debian Linux
 
 The following describes how you can disable suspended state without having to login to your graphical user interface.
