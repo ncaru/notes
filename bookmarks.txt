@@ -1,0 +1,2 @@
+https://www.atlassian.com/git
+https://gitlab.com/-/snippets/2515869
